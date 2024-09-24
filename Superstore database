@@ -1,0 +1,16 @@
+#getting the full table and ordering by price
+select*
+from superstore
+order by price;
+
+select sum(price),avg(price),max(price),min(price)
+from superstore;
+
+select sum(price),avg(price),max(price),min(price)
+from superstore
+where category ='Kitchen Supplies';
+# This query below will display the items in electronis by price desc 
+select item_name, price
+from superstore
+where category ='Electronics'
+order by price desc;
